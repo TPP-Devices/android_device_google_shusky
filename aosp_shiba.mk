@@ -19,6 +19,7 @@ TARGET_LINUX_KERNEL_VERSION := 5.15
 USE_SWIFTSHADER := true
 BOARD_USES_SWIFTSHADER := true
 
+$(call inherit-product, device/google/shusky/custom_shiba.mk)
 $(call inherit-product, device/google/zuma/aosp_common.mk)
 $(call inherit-product, device/google/shusky/shiba_generic.mk)
 
